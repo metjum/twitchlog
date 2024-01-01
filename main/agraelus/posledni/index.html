@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logs</title>
+    <style>
+
+        body {
+            background-color: #000;
+            color: #00ff00;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .logMessage {
+            border-top: 1px solid #ffffff;
+            border-bottom: 1px solid #ffffff;
+            padding: 10px;
+            margin-bottom: 5px;
+            display: block;/
+        }
+
+        .logMessagePrefix {
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        .search-box {
+            width: 100%;
+            max-width: 500px;
+            margin: 10px auto;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border: none;
+            border-bottom: 2px solid #ffffff;
+            background-color: transparent;
+            color: #fff;
+            outline: none;
+        }
+
+        .search-input::placeholder {
+            color: #aaa;
+        }
+
+        .search-icon {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            color: #fff;
+            cursor: pointer;
+        }
+        .controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .controls select, .controls input {
+            width: 200px;
+            padding: 8px;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <input type="text" class="search-input" id="searchInput" placeholder="Vyhledat...">
+    </div>
+
+    <div id="logContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
